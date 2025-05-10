@@ -9,8 +9,8 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(207, 65%, 65%);
   --title-color: hsl(207, 4%, 16%);
-  --text-color: hsl(207, 4%, 28%);
-  --text-color-light: hsl(207, 4%, 56%);
+  --text-color: hsl(200, 7%, 9%);
+  --text-color-light: hsl(210, 4%, 10%);
   --body-color: hsl(207, 4%, 99%);
   --container-color: hsl(207, 4%, 95%);
 
@@ -1310,3 +1310,22 @@ body.dark-theme{
   }
 
 }
+  /* Default (Day theme) */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Night theme */
+body.night{
+  background-color: #121212;
+  --first-color: hsla(187, 30%, 60%, 0.74);
+  --title-color: hsla(186, 46%, 57%, 0.74);
+  --text-color: hsla(187, 30%, 58%, 0.74);
+  --text-color-light: hsla(186, 54%, 57%, 0.74);
+  color:rgb(88, 206, 214)
+  
+}
+
+

@@ -1,435 +1,423 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="/img/resume.png" />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="icon" href="" type="image/x-icon">
+    <title>vengadesan</title>
+  </head>
+  <body id="body">
+    <style>
+        .btn-primary:hover {
+          background-color: #111316 !important;
+          border-color: #030405 !important;
+        }
         
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+        .btn-primary:active {
+          background-color: #898b8d !important;
+          border-color: #909396 !important;
+        }
+        .btn-custom-radius {
+         border-radius: 12px;
+        } 
+    </style>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> G.vengadesan </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__itemm">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-line"></i> Home
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#skills" class="nav__link">
+                <i class="ri-code-line"></i> Skills
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#qualification" class="nav__link">
+                <i class="ri-book-line"></i> Qualifications
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#projects" class="nav__link">
+                <i class="ri-macbook-line"></i> Projects
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#contact" class="nav__link">
+                <i class="ri-chat-4-line"></i> Contact Me
+              </a>
+            </li>
+          </ul>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./css/styles.css">
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
 
-        <title>vengadesan</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                   G.vengadesan
+        <div class="nav__buttons">
+          <!-- Theme change button -->
+          <i
+            onclick="toggleTheme()"
+            class="ri-moon-line change-theme"
+            id="theme-button"
+          ></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid section__border">
+          <div class="home__data grid">
+            <h1 class="home__title">
+              Hi, I'm vengadesan <br />
+              Full Stack Developer(MERN) <br />
+              Based in perambalur <br />
+            </h1>
+            <div class="home__blob grid">
+              <div class="home__perfil"  >
+                <img src="./img/vengat.jpg" style="width: auto; height: auto;"  alt="home perfil" />
+              </div>
+              <img
+                src="./img/shape-wawes.svg"
+                alt=""
+                class="home__shape-wawes"
+              />
+              <img
+                src="./img/shape-circle.svg"
+                alt=""
+                class="home__shape-circle"
+              />
+            </div>
+            <ul class="home__social">
+              <a
+                href="https://www.linkedin.com/in/vengadesan-gunasekaran-036539299/"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+              <a
+                href="https://github.com/vengadesan2"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+            </ul>
+            <div class="home__social">
+                <button type="button" class="btn btn-primary btn-custom-radius" style="background-color: #d0d2d6 !important;">
+                    <a href="https://drive.google.com/file/d/1eIDPq7brRowmZygVnsn3nwVKBH90puyV/view?usp=drive_link" target="_blank" class="text-decoration-none"">
+                        <h3 class="Resume">Download Resume</h3>
+                    </a>
+                </button>
+            </div>
+          </div>
+
+          <!--==================== HOME INFO 1 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">BIOGRAPHY</h3>
+              <p class="home__info-description">
+                Hi, I'm vengadesan MERN Developer. Passionate about solving
+                algorithmic problems and building software. Based in Tamil Nadu.
+              </p>
+            </div>
+            <div>
+              <h3 class="home__info-title">CONTACT</h3>
+              <p class="home__info-description">
+                vengadesan in india <br />
+                vengadesanguna24@gmail.com <br />
+                +91-6380929688<br />
+              </p>
+            </div>
+          </div>
+
+          <!--==================== HOME INFO 2 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">GRADUATED BY</h3>
+              <p class="home__info-number">2023</p>
+            </div>
+            <div>
+              <h3 class="home__info-title">COMPLETED PROJECTS</h3>
+              <p class="home__info-number">5+</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle"> My top skills </span>
+        <div class="skills__container container grid section__border">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i> Software Developer
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./img/html_css.jpg"
+                    style="object-fit: contain"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">HTML/CSS</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/icons8-javascript.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">JavaScript</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/react.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">React</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/express-js.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">ExpressJS</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/nodejs.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">NodeJS</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/mongoDb.png" alt="skills image" />
+                </div>
+                <h3 class="skills__name">MongoDB</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img//mysql.png" alt="skills image" />
+                </div>
+                <h3 class="skills__name">MySQL</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./img/icons8-bootstrap-logo.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">Bootstrap</h3>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i>Version Control & Computer
+              Fundamentals
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/icons8-github-60.png" alt="skills image" />
+                </div>
+                <h3 class="skills__name">GitHub</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/icons8-git.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Git</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./img/icons8-binary-code-100.png"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">DSA</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/icons8-plugin-100.png" alt="skills image" />
+                </div>
+                <h3 class="skills__name">OOPS</h3>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./img/icons8-database-100.png" alt="skills image" />
+                </div>
+                <h3 class="skills__name">DBMS</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualifications</h2>
+        <span class="section__subtitle"> Experience and Education </span>
+        <div class="qualification__container container grid section__border">
+          <!--==================== QUALIFICATION 1 ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-book-line"></i> Education
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">
+                  B.E. (Elecrical & Elecronic Engineering)
+                </h3>
+                <span class="qualification__country">
+                  Roever Engniring of Engineering
+                </span>
+                <span class="qualification__year"> 2019 - 2023 </span>
+              </div>
+              <div>
+                <h3 class="qualification__name">
+                  Higher Secondary Education (HSC)
+                </h3>
+                <span class="qualification__country">
+                  perambalur GHS School
+                </span>
+                <span class="qualification__year"> 2017 - 2019 </span>
+              </div>
+              <div>
+                <h3 class="qualification__name">High School (SSLC)</h3>
+                <span class="qualification__country">
+                  Alambadi GHS School
+                </span>
+                <span class="qualification__year"> Upto 2017 </span>
+              </div>
+            </div>
+          </div>
+          <!--==================== Experience ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-building-line"></i> Experience
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">Web Developer</h3>
+                <span class="qualification__country">
+                  Freelance - Tamil Nadu
+                </span>
+                <span class="qualification__year"> jul 2023 - Dec 2023 </span>
+                <span class="qualification__year">
+                  <br />
+
+                  <a href="https://thedomain46.com/">
+                    project Demo plaese click the project
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="./img/shape-circle.svg"
+          alt="qualification image"
+          class="qualification__img"
+        />
+      </section>
+
+      <!--==================== Certification & Awards ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Certification & Awards</h2>
+        <span class="section__subtitle"> Skill Ups </span>
+        <div class="qualification__container container grid section__border">
+          <!--==================== Certification  ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-book-line"></i> Certification
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">Full Stack Developer(MERN)</h3>
+                <span class="qualification__country"> Guvi, Chennai. </span>
+                <span class="qualification__year"> Oct-2023 to Dec-2023 </span>
+                <a style="color: rgb(42, 75, 223);" href="https://www.guvi.in/verify-certificate?id=jS69T7w352921Xz318" target="_blank" class="projects__button">
+                    View Certificate <i class="ri-arrow-right-line"></i>
                 </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__itemm">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="ri-home-line"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-code-line"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#qualification" class="nav__link">
-                                <i class="ri-book-line"></i> Qualifications
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-macbook-line"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#contact" class="nav__link">
-                                <i class="ri-chat-4-line"></i> Contact Me
-                            </a>
-                        </li>
-                    </ul>
+              </div>
+            </div>
+          </div>
+          <!--==================== Awards ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-building-line"></i> Awards
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">Good worker</h3>
+                <span class="qualification__country"> Freelance </span>
+                <span class="qualification__year"> jul 2024 - Dec 2024 </span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close"> 
-                        <i class="ri-close-line"></i>
-                    </div>
+        <!-- <img src="./img/shape-circle.svg" alt="qualification image" class="qualification__img"> -->
+      </section>
 
-                </div>
-
-                <div class="nav__buttons">
-                    <!-- Theme change button -->
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-                    <!-- Toggle button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid section__border">
-                    <div class="home__data grid">
-                        <h1 class="home__title">
-                            Hi, I'm vengadesan <br>
-                            Full Stack Developer(MERN) <br>
-                            Based in perambalur <br>
-                        </h1>
-                        <div class="home__blob grid">
-                            <div class="home__perfil">
-                                <img src="./img/vengat.jpg" alt="home perfil">
-                            </div>
-                            <img src="./img/shape-wawes.svg" alt="" class="home__shape-wawes">
-                            <img src="./img/shape-circle.svg" alt="" class="home__shape-circle">
-                        </div>
-                        <ul class="home__social">
-                            <a href="https://www.linkedin.com/in/vengadesan-gunasekaran-036539299/" target="_blank" class="home__social-link">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <a href="https://github.com/vengadesan2" target="_blank" class="home__social-link">
-                                <i class="ri-github-line"></i>
-                            </a>
-                        </ul>
-                    </div>
-                    
-                    <!--==================== HOME INFO 1 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                BIOGRAPHY
-                            </h3>
-                            <p class="home__info-description">
-                                Hi, I'm vengadesan MERN Developer.
-                                Passionate about solving algorithmic problems
-                                and building software. Based in Tamil Nadu.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                CONTACT
-                            </h3>
-                            <p class="home__info-description">
-                                vengadesan in india <br>
-                                vengadesanguna24@gmail.com <br>
-                                +91-6380929688<br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--==================== HOME INFO 2 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                GRADUATED BY
-                            </h3>
-                            <p class="home__info-number">
-                                2023
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                COMPLETED PROJECTS
-                            </h3>
-                            <p class="home__info-number">
-                                5+
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">
-                    Skills
-                </h2>
-                <span class="section__subtitle">
-                    My top skills
-                </span>
-                <div class="skills__container container grid section__border">
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-braces-line"></i> Software Developer
-                        </h3>
-                        <div class="skills__info">
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/html_css.jpg" style="object-fit: contain;" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    HTML/CSS
-                                </h3>
-                            </div>
-                            
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-javascript.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    JavaScript
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/react.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    React
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/express-js.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    ExpressJS
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/nodejs.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    NodeJS
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/mongoDb.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    MongoDB
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img//mysql.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    MySQL
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-bootstrap-logo.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Bootstrap
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-braces-line"></i>Version Control & Computer Fundamentals
-                        </h3>
-                        <div class="skills__info">
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-github-60.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    GitHub
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-git.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Git
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-binary-code-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    DSA
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-plugin-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    OOPS
-                                </h3>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="./img/icons8-database-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    DBMS
-                                </h3>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">
-                    Qualifications
-                </h2>
-                <span class="section__subtitle">
-                    Experience and Education
-                </span>
-                <div class="qualification__container container grid section__border">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-book-line"></i> Education
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    B.E. (Elecrical & Elecronic Engineering)
-                                </h3>
-                                <span class="qualification__country">
-                                 Roever Engniring of Engineering
-                                </span>
-                                <span class="qualification__year">
-                                    2019 - 2023
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    Higher Secondary Education (HSC)
-                                </h3>
-                                <span class="qualification__country">
-                                    perambalur GHS  School
-                                </span>
-                                <span class="qualification__year">
-                                    2017 - 2019
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    High School (SSLC)
-                                </h3>
-                                <span class="qualification__country">
-                                   Alambadi GHS School
-                                </span>
-                                <span class="qualification__year">
-                                    Upto 2017
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== Experience ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Experience
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                     Web Developer
-                                </h3>
-                                <span class="qualification__country">
-                                    Freelance - Tamil Nadu
-                                </span>
-                                <span class="qualification__year">
-                                    jul 2023 - Dec 2023
-                                </span>
-                                <span class="qualification__year">
-                                    <br>
-                                  
-                                    <a href="https://thedomain46.com/">
-                                        project Demo plaese click the project  
-                                    </a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="./img/shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
-
-            <!--==================== Certification & Awards ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">
-                    Certification & Awards
-                </h2>
-                <span class="section__subtitle">
-                    Skill Ups
-                </span>
-                <div class="qualification__container container grid section__border">
-                    <!--==================== Certification  ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-book-line"></i> Certification
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Full Stack Developer(MERN)
-                                </h3>
-                                <span class="qualification__country">
-                                    Guvi, Chennai.
-                                </span>
-                                <span class="qualification__year">
-                                    Oct-2023 to Dec-2023
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== Awards ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Awards
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                 <h3 class="qualification__name">
-                                     Good worker  
-                                </h3>
-                                <span class="qualification__country">
-                                    Freelance
-                                </span> 
-                                <span class="qualification__year">
-                                    jul 2024 - Dec 2024
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="./img/shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
-
-            <!--==================== ACHIEVEMENTS ====================-->
-            <!-- <section class="achievements section" id="achievements">
+      <!--==================== ACHIEVEMENTS ====================-->
+      <!-- <section class="achievements section" id="achievements">
                 <h2 class="section__title">
                     Achievements
                 </h2>
@@ -476,258 +464,277 @@
                 </div>
             </section> -->
 
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">
-                    Projects
-                </h2>
-                <span class="section__subtitle">
-                    My personal projects
-                </span>
-                <div class="container section__border">
-                    <div class="projects__container swiper">
-                        <div class="swiper-wrapper">
-                            <!--==================== PROJECT 1 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/e-commerse.png" alt="projects image" style="margin-left: 64px;" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, MERN Stack
-                                    </span>
-                                    <h1 class="projects__title">
-                                        ecommers Web Application
-                                    </h1>
-                                    <a href="https://e-commers-frnd-1.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 2 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/icons8-github-60.png" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Github Profile Fetch
-                                    </h1>
-                                    <a href="https://github-profile-fetch.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 3 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/to-do.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        To-Do App - CRUD
-                                    </h1>
-                                    <a href="https://to-do-app-weld-theta.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            
-                            <!--==================== PROJECT 4 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/memorycolor.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Memory Color Flip game
-                                    </h1>
-                                    <a href="https://memory-flip-game-woad.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 5 ====================-->                            
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/calculator.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Calculator
-                                    </h1>
-                                    <a href="https://zen-js-roadmap-task-9-2.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 6 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/temp-converter.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Celsius to Fahrenheit Converter
-                                    </h1>
-                                    <a href="https://celsius-to-fahrenheit-murex.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 7 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="./img/weather.jpg" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        WebPage, front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Weather reports
-                                    </h1>
-                                    <a href="https://zen-js-roadmap-task-11.vercel.app/" target="_blank" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </div>
-                        <!-- Swiper pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="d-flex flex-row justify-content-center flex-wrap" >
+            <span style="color: rgb(19, 148, 165);" class="mx-3">user_id :vengadesanguna24@gmail.com</span>
+            <span style="color: rgb(31, 156, 165);">password:Vengat@24<h1/span>
+        </div>
+        <span class="section__subtitle"> My personal projects </span>
+        <div class="container section__border">
+          <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== PROJECT 1 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/e-commerse.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, MERN Stack </span>
+                  <h1 class="projects__title">ecommers Web Application</h1>
+                  <a
+                    href="https://e-commers-frnd-1.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
                 </div>
-            </section>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">
-                    Contact Me
-                </h2>
-                <span class="section__subtitle">
-                    Get in touch
-                </span>
-                <div class="contact__container container grid section__border">
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-chat-3-line"></i>
-                            Text me
-                        </h3>
-                        <div class="contact__info">
-                            <div class="contact__data">
-                                <span class="contact__data-title">
-                                    Email
-                                </span>
-                                <span class="contact__data-info">
-                                    vengadesanguna24@gmail.com
-                                </span>
-                            </div>
-                            <div class="contact__data">
-                                <span class="contact__data-title">
-                                    WhatsApp
-                                </span>
-                                <span class="contact__data-info">
-                                    +91 - 6380929688
-                                </span>
-                                <a href="https://api.whatsapp.com/send?phone=xxxxxxxxxxxx&text=Hello, more information!" target="_blank" class="contact__button">
-                                    Text me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-send-plane-line"></i> Have a query for me?
-                        </h3>
-                        <form action="" class="contact__form" id="contact-form">
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">
-                                    Name
-                                </label>
-                                <input type="text" name="user_name" required placeholder="Your name" class="contact__form-input" id="contact-name">
-                            </div>
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">
-                                    Email
-                                </label>
-                                <input type="email" name="user_email" required placeholder="Your email" class="contact__form-input" id="contact-email">
-                            </div>
-                            <div class="contact__form-div contact__form-area">
-                                <label class="contact__form-tag">
-                                    Text
-                                </label>
-                                <textarea name="user_project" placeholder="Ask me something?" id="contact-project" class="contact__form-input"></textarea>
-                            </div>
-                            <p class="contact__message" id="contact-message"></p>
-                            <button type="submit" class="contact__button">
-                                Send <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </form>
-                    </div> -->
+              </div>
+              <!--==================== PROJECT 2 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/icons8-github-60.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, front-end </span>
+                  <h1 class="projects__title">Github Profile Fetch</h1>
+                  <a
+                    href="https://github-profile-fetch.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
                 </div>
-            </section>
-        </main>
+              </div>
+              <!--==================== PROJECT 3 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/to-do.jpg"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, front-end </span>
+                  <h1 class="projects__title">To-Do App - CRUD</h1>
+                  <a
+                    href="https://to-do-app-weld-theta.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
 
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">
-                 vengadesan
-                </h1>
-                <p>
-                    Software Developer
-                </p>
-                <ul class="footer__list">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="footer__link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
-                <ul class="footer__social">
-                    <a href="https://www.linkedin.com/in/vengadesan-gunasekaran-036539299/" target="_blank" class="footer__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                    </a>
-                    <a href="https://github.com/vengadesan2?tab=repositories" target="_blank" class="footer__social-link">
-                        <i class="ri-github-line"></i>
-                    </a>
-                </ul>
-                <span class="footer__copy">
-                    &#169; Copyright G.vengadesan. All rights reserved.
-                </span>
+              <!--==================== PROJECT 4 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/memorycolor.jpg"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, front-end </span>
+                  <h1 class="projects__title">Memory Color Flip game</h1>
+                  <a
+                    href="https://memory-flip-game-woad.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+              <!--==================== PROJECT 5 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/calculator.jpg"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, front-end </span>
+                  <h1 class="projects__title">Calculator</h1>
+                  <a
+                    href="https://zen-js-roadmap-task-9-2.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+              <!--==================== PROJECT 6 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/temp-converter.jpg"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, front-end </span>
+                  <h1 class="projects__title">
+                    Celsius to Fahrenheit Converter
+                  </h1>
+                  <a
+                    href="https://celsius-to-fahrenheit-murex.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+              <!--==================== PROJECT 7 ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./img/weather.jpg"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> WebPage, front-end </span>
+                  <h1 class="projects__title">Weather reports</h1>
+                  <a
+                    href="https://zen-js-roadmap-task-11.vercel.app/"
+                    target="_blank"
+                    class="projects__button"
+                  >
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-        </footer>
+            <!-- Swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
 
-
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
-
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="./js/scrollreveal.min.js"></script>
-
-        <!--=============== SWIPER JS ===============-->
-        <script src="./js/swiper-bundle.min.js"></script>
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="card shadow p-4" style="width: 100%; max-width: 500px; border-radius: 12px;">
+              <p class="text-center text-muted mb-4" style="color: #091111 !important;" >Feel free to reach out to me with any questions or opportunities.</p>
+               <p> </p>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="userEmail" class="form-label">Your Email</label>
+                  <input type="email" style="border-radius: 12px;" class="form-control" id="userEmail" name="user_email" required>
+                </div>
         
-        <!--=============== EMAIL JS ===============-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                <div class="mb-3">
+                  <label for="userName" class="form-label">Your Name</label>
+                  <input type="text" style="border-radius: 12px;"  class="form-control" id="userName" name="user_name" required>
+                </div>
+        
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" style="border-radius: 12px;"  id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-50 ">Send Message</button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="./js/main.js"></script>
-    </body>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">vengadesan</h1>
+        <p>direct_contact: 6380929699</p>
+        <p>Software Developer</p>
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/vengadesan-gunasekaran-036539299/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a
+            href="https://github.com/vengadesan2?tab=repositories"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+        <span class="footer__copy">
+          &#169; Copyright G.vengadesan. All rights reserved.
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./js/main.js"></script>
+    <script>
+      const swiper = new Swiper(".projects__container", {
+        loop: true, // 🔥 Infinite loop
+        autoplay: {
+          delay: 500, // 🔥 Auto move every 3 seconds
+          disableOnInteraction: false, // 🔥 Auto continue even after manual swipe
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 3,
+        spaceBetween: 25,
+        speed: 600, // 🔥 Smooth transition speed
+      });
+    </script>
+  </body>
 </html>
